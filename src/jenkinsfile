@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven 3.9.6'
+    }
+
     environment {
         DOCKER_IMAGE = 'yourdockerhubusername/abctechnologies:latest'
     }
@@ -59,5 +63,6 @@ pipeline {
         }
     }
 }
+
 
 
